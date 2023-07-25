@@ -1,0 +1,10 @@
+<h1>The rial news</h1>
+<p>noticias reales contadas por una IA</p>
+
+<% @posts.each do |post| %>
+    <article>
+        <header>Titulo: <%= post.titulo %></header>
+        Noticia: <%= post.descripcion %><hr>
+        <%= link_to "Ver", post %>
+    </article>
+<% end %>
